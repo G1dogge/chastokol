@@ -32,7 +32,7 @@ def chastokol_decrypt(ciphertext, key):
 def main():
     user_input = input("Введіть слово для шифрування: ")
 
-    # Перевірка, чи слово складається тільки з українських літер
+
     if not all(
             char.isalpha() and char.islower() and char in "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя" for char in user_input):
         print("Будь ласка, переключіть мову на українську.")
